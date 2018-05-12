@@ -47,6 +47,13 @@ class App extends Component {
               <p>Walking Lecture</p>
             </a>
           </div>
+          <div className="title">
+            <p>Kyoto Sights and Nights</p>
+          </div>
+        </div>
+        <div className="random-images">
+          <div className="first-image" />
+          <div className="second-image" />
         </div>
       </div>
     );
