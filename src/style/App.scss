@@ -78,8 +78,11 @@
         // top: 70px;
         // transform-origin: left top 50px;
         font-size: 60px;
-        font-weight: bold;
-        text-decoration: underline;
+        font-weight: thin;
+        color: #141414;
+        // text-decoration: underline;
+        border-bottom: 2px solid #141414;
+        background-color: white;
       }
     }
   }
@@ -107,6 +110,22 @@
       position: absolute;
       top: 80vh;
       right: 700px;
+    }
+    .third-image {
+      background-color: pink;
+      width: 600px;
+      height: 400px;
+      position: absolute;
+      top: 150vh;
+      left: 150px;
+    }
+    .fourth-image {
+      background-color: green;
+      width: 500px;
+      height: 700px;
+      position: absolute;
+      top: 210vh;
+      left: 50%;
     }
   }
 }

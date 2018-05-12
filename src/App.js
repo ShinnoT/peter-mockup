@@ -54,6 +54,8 @@ class App extends Component {
         <div className="random-images">
           <div className="first-image" />
           <div className="second-image" />
+          <div className="third-image" />
+          <div className="fourth-image" />
         </div>
       </div>
     );
