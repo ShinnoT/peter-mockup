@@ -74,6 +74,18 @@ class App extends Component {
           </div>
           <div className="cool-brackets" />
           <div className="fourth-image" />
+          <div className="third-content">
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate
+              urna. Quisque porta facilisis tortor, vitae bibendum velit
+              fringilla vitae! Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id
+              nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae
+              bibendum velit fringilla vitae!
+              <cite>Somebody famous</cite>
+            </blockquote>
+          </div>
         </div>
       </div>
     );
