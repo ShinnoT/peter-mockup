@@ -56,7 +56,7 @@
             color: #646464;
             border-bottom: 2px solid #646464; }
     .App .top .title {
-      z-index: 99;
+      z-index: 3;
       width: 65%;
       height: 100vh; }
       .App .top .title p {
@@ -73,32 +73,61 @@
     top: 0;
     left: 0;
     background-color: transparent;
-    z-index: 1; }
+    z-index: 3; }
     .App .random-images .first-image {
-      background-color: red;
+      z-index: 4;
       width: 300px;
       height: 500px;
       position: absolute;
       top: 200px;
-      right: 150px; }
+      right: 150px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("./images/old-vertical-compressor.jpg");
+      filter: grayscale(100%);
+      transition: 0.5s ease; }
+      .App .random-images .first-image:hover {
+        filter: grayscale(0%); }
     .App .random-images .second-image {
-      background-color: blue;
-      width: 400px;
+      width: 700px;
       height: 550px;
       position: absolute;
       top: 80vh;
-      right: 700px; }
+      right: 700px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("./images/horizontal1-compressor.jpg");
+      filter: grayscale(100%);
+      transition: 0.5s ease; }
+      .App .random-images .second-image:hover {
+        filter: grayscale(0%); }
     .App .random-images .third-image {
-      background-color: pink;
       width: 600px;
       height: 400px;
       position: absolute;
       top: 150vh;
-      left: 150px; }
+      left: 150px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("./images/horizontal2-compressor.jpg");
+      filter: grayscale(100%);
+      transition: 0.5s ease; }
+      .App .random-images .third-image:hover {
+        filter: grayscale(0%); }
     .App .random-images .fourth-image {
-      background-color: green;
       width: 500px;
       height: 700px;
       position: absolute;
       top: 210vh;
-      left: 50%; }
+      left: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("./images/kiyomizu-vertical-compressor.jpg");
+      filter: grayscale(100%);
+      transition: 0.5s ease; }
+      .App .random-images .fourth-image:hover {
+        filter: grayscale(0%); }
