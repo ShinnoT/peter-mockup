@@ -54,7 +54,25 @@ class App extends Component {
         <div className="random-images">
           <div className="first-image" />
           <div className="second-image" />
+          <div className="first-content">
+            <h1>Lorem Ipsum</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
           <div className="third-image" />
+          <div className="second-content">
+            <p>
+              &ensp; &ensp; &ensp; &ensp; &ensp;Walking lecture in the streets
+              of Kyoto.
+            </p>
+          </div>
+          <div className="cool-brackets" />
           <div className="fourth-image" />
         </div>
       </div>

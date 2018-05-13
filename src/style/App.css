@@ -86,7 +86,7 @@
       background-position: center;
       background-image: url("./images/old-vertical-compressor.jpg");
       filter: grayscale(100%);
-      transition: 0.5s ease; }
+      transition: 1s ease; }
       .App .random-images .first-image:hover {
         filter: grayscale(0%); }
     .App .random-images .second-image {
@@ -94,13 +94,13 @@
       height: 550px;
       position: absolute;
       top: 80vh;
-      right: 700px;
+      left: 300px;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-image: url("./images/horizontal1-compressor.jpg");
       filter: grayscale(100%);
-      transition: 0.5s ease; }
+      transition: 1s ease; }
       .App .random-images .second-image:hover {
         filter: grayscale(0%); }
     .App .random-images .third-image {
@@ -114,7 +114,7 @@
       background-position: center;
       background-image: url("./images/horizontal2-compressor.jpg");
       filter: grayscale(100%);
-      transition: 0.5s ease; }
+      transition: 1s ease; }
       .App .random-images .third-image:hover {
         filter: grayscale(0%); }
     .App .random-images .fourth-image {
@@ -128,6 +128,44 @@
       background-position: center;
       background-image: url("./images/kiyomizu-vertical-compressor.jpg");
       filter: grayscale(100%);
-      transition: 0.5s ease; }
+      transition: 1s ease; }
       .App .random-images .fourth-image:hover {
         filter: grayscale(0%); }
+    .App .random-images .first-content {
+      font-size: 20px;
+      width: 500px;
+      height: 550px;
+      position: absolute;
+      top: 80vh;
+      right: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .App .random-images .first-content p {
+        background-color: white;
+        font-weight: 200; }
+    .App .random-images .second-content {
+      width: 800px;
+      height: 400px;
+      position: absolute;
+      top: 150vh;
+      right: 102px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .App .random-images .second-content p {
+        background-color: white;
+        font-weight: 200;
+        font-size: 35px;
+        border-bottom: 1px solid #141414; }
+    .App .random-images .cool-brackets {
+      width: 50px;
+      height: 400px;
+      position: absolute;
+      top: 150vh;
+      left: 1000px;
+      background-color: transparent;
+      border-top: 1px solid #141414;
+      border-bottom: 1px solid #141414;
+      border-right: 1px solid #141414; }
