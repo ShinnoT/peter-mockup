@@ -2,6 +2,45 @@ import React, { Component } from "react";
 import "./style/main.css";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    // this.initials = React.createRef();
+    this.state = {
+      styles: {}
+    };
+    this.scrollLoop = this.scrollLoop.bind(this);
+  }
+
+  componentDidMount() {
+    // const initials = this.initials.current;
+    window.addEventListener("scroll", this.scrollLoop, false);
+  }
+
+  scrollLoop(e) {
+    const that = this;
+    const setTranslate = (xPos, yPos, arrOfChanges) => {
+      that.setState({
+        styles: {
+          firstImage: {
+            transform: `translate3d(${xPos}px, ${yPos * arrOfChanges[0]}px, 0)`
+          },
+          secondImage: {
+            transform: `translate3d(${xPos}px, ${yPos * arrOfChanges[1]}px, 0)`
+          },
+          thirdImage: {
+            transform: `translate3d(${xPos}px, ${yPos * arrOfChanges[2]}px, 0)`
+          },
+          fourthImage: {
+            transform: `translate3d(${xPos}px, ${yPos * arrOfChanges[3]}px, 0)`
+          }
+        }
+      });
+    };
+    let yScrollPosition = window.scrollY;
+    setTranslate(0, yScrollPosition, [0.05, 0.02, -0.03, -0.05]);
+    requestAnimationFrame(this.scrollLoop);
+  }
+
   render() {
     return (
       <div className="App">
@@ -52,8 +91,8 @@ class App extends Component {
           </div>
         </div>
         <div className="random-images">
-          <div className="first-image" />
-          <div className="second-image" />
+          <div className="first-image" style={this.state.styles.firstImage} />
+          <div className="second-image" style={this.state.styles.secondImage} />
           <div className="first-content">
             <h1>Lorem Ipsum</h1>
             <p>
@@ -65,7 +104,7 @@ class App extends Component {
               nulla pariatur.
             </p>
           </div>
-          <div className="third-image" />
+          <div className="third-image" style={this.state.styles.thirdImage} />
           <div className="second-content">
             <p>
               &ensp; &ensp; &ensp; &ensp; &ensp;Walking lecture in the streets
@@ -73,7 +112,7 @@ class App extends Component {
             </p>
           </div>
           <div className="cool-brackets" />
-          <div className="fourth-image" />
+          <div className="fourth-image" style={this.state.styles.fourthImage} />
           <div className="third-content">
             <blockquote>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
